@@ -557,7 +557,7 @@ html { scroll-behavior: smooth; }
     
   goal_prg.innerText = `( ${gpr-44}/ 2000 )`;
   goal_pr.style = `width:${Math.trunc(((gpr-44)/2000)*100)}%`;
-  goal_pr.innerText = "GOAL PROGRESS BAR";// ( ${((gpr-40)/1000)*100}% )`;
+  goal_pr.innerText = `GOAL PROGRESS ${Math.floor(((gpr-40)/2000)*100)}%`;
   goal_pr.style.fontWeight = "bold";
   goal_pr.style.fontSize = "xx-small";
   num.innerText = gpr;
