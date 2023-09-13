@@ -89,6 +89,11 @@ body {
 }
 
 /** Utility Classes **/
+.servertitle {
+  font-family: "ServerName";
+  color: #fff;
+  background-color: #fff;
+}
 
 .fixed {
   position: fixed;
@@ -379,11 +384,16 @@ color: var(--color-white-84);
   position: relative;
 }
 
-
 .badge-primary {
   color: #fff;
   background-color: var(--color-discord);
   border-color: var(--color-discord);
+}
+
+.badge-secondary-202 {
+  color: #fff;
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary-alt);
 }
 
 .badge-info {
