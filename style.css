@@ -39,6 +39,10 @@
   --color-secondary-alt: #FFAF43;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial;
   background-color: var(--color-primary) !important;
@@ -68,6 +72,20 @@ body {
     max-height: 100px;
     width: 31%;
     margin-left: 10px;
+}
+
+.zk {
+  font-family: Arial
+}
+
+.zk-discord {
+  color: #FFEE98;
+  background-color: #FFAC3D;
+}
+
+.zk-light-discord {
+  color: #FFEE98;
+  background-color: #7B7B7B;
 }
 
 /** Utility Classes **/
