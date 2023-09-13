@@ -1,6 +1,6 @@
 @font-face {
   font-family: "ServerName";
-  src: url("fonts/Designer.ttf");
+  src: url("fonts/Designer.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
