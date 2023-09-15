@@ -34,11 +34,11 @@
   --background-secondary-alt: #15171d;
   --background-tertiary: #202225;
   --background-accent: #4f545c;
-  --color-primary: #2b1201;
-  --color-primary-2: #351500;
-  --color-primary-alt: #492003;
-  --color-secondary: #FF9A13;
-  --color-secondary-alt: #FFAF43;
+  --color-primary: #00220E;
+  --color-primary-2: #003817;
+  --color-primary-alt: #005523;
+  --color-secondary: #00AF48;
+  --color-secondary-alt: #00E35D;
 }
 
 html {
