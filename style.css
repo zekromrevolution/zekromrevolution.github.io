@@ -560,7 +560,7 @@ h5.h6.mb-1 .badge-verified {
     padding: 0.55rem 1rem;
 }
 .tabbed-pills li.nav-item:hover {
-  background-color: var(--color-primary-2) !important;
+  background-color: var(--color-white-6) !important;
   border-bottom: 0px solid var(--color-primary-alt);
   border-radius: 4px;
 }
