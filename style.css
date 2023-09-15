@@ -561,7 +561,7 @@ h5.h6.mb-1 .badge-verified {
 }
 .tabbed-pills li.nav-item:hover {
   background-color: var(--color-white-6) !important;
-  border-bottom: 0px solid var(--color-primary-alt);
+  border-bottom: 0px solid var(--color-white-6);
   border-radius: 4px;
 }
 /** Stats Group **/
@@ -3097,12 +3097,12 @@ table .badge-icon {
 }
 
 #side-menu {
-  background: var(--color-gray-700);
+  background: var(--color-primary-alt);
   color: #fff;
 }
 
 #side-menu .nav-link {
-  color: var(--color-white-84);
+  color: var(--color-primary-alt);
 }
 
 
@@ -3169,4 +3169,7 @@ imput:active {
     padding: 4px 4px;
     line-height: 1;
     position: relative;
+}
+
+.nav {
 }
