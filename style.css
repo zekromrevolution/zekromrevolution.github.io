@@ -2815,7 +2815,7 @@ imput:active {
 .theme-dark .card-item:hover .card-body,
 .theme-dark .card-event:hover .card-body,
 .theme-dark .card-item:hover .card-icon img {
-  background: var(--color-primary-2) !important;
+  background: var(--color-primary-alt) !important;
   transition: all 0.2s ease-in;
 }
 
@@ -2826,7 +2826,7 @@ imput:active {
 
 .page-info {
   margin-top: 15px;
-  border-top: 1px solid var(--color-primary-2);
+  border-top: 1px solid var(--color-primary-alt);
   padding: 15px 0;
   width: 100%;
   display: block;
@@ -2866,7 +2866,7 @@ imput:active {
 .small-hero .img img {
   width: 85px;
   height: 85px;
-  background: var(--color-primary-2) !important;
+  background: var(--color-primary) !important;
   border-radius: 210px;
   padding: 5px;
 }
