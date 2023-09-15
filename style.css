@@ -4,7 +4,7 @@
   font-weight: normal;
   font-style: normal;
 }
-nav-link
+
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&display=swap");
 
 .theme-dark {
@@ -477,7 +477,7 @@ h5.h6.mb-1 .badge-verified {
 .tabbed-area .nav-link {
     display: block;
     padding: 0.4rem 0 0.58rem 0;
-    color: var(--color-primary-alt);
+    color: var(--color-white-12);
     margin-right: 25px;
     font-family: Arial;
     font-size: 14px;
@@ -485,7 +485,7 @@ h5.h6.mb-1 .badge-verified {
 }
 
 .tabbed-area .nav-link:hover {
-    color: var(--color-secondary);
+    color: var(--color-white-84);
 }
 
 .tabbed-area .nav-link.active {
