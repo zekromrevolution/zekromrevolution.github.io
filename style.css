@@ -2123,6 +2123,7 @@ div#lite-search-input {
   }
   .navbar-nav.float-right {
     float: right !important;
+    color: --colot-white-6;
     background-color: --color-primary-alt;
     width: 100%;
   }
@@ -3170,7 +3171,4 @@ imput:active {
     padding: 4px 4px;
     line-height: 1;
     position: relative;
-}
-
-.navbar {
 }
