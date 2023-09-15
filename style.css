@@ -4,7 +4,7 @@
   font-weight: normal;
   font-style: normal;
 }
-card-body
+
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&display=swap");
 
 .theme-dark {
@@ -2788,15 +2788,15 @@ imput:active {
 .theme-dark .card-body,
 .theme-dark .card,
 .theme-dark .list-group-item {
-  background: var(--color-gray-400) !important;
+  background: var(--color-primary-2) !important;
 }
 .theme-dark .list-group-item:hover {
-  background: var(--color-gray-500) !important;
+  background: var(--color-primary-alt) !important;
 }
 .theme-dark .card-header {
-  background: var(--color-gray-400);
+  background: var(--color-primary-2);
   color: #fff;
-  border-bottom: 1px solid var(--color-gray-300);
+  border-bottom: 1px solid var(--color-primary-alt);
 }
 .card-item .card-body {
   z-index: 999;
@@ -2815,7 +2815,7 @@ imput:active {
 .theme-dark .card-item:hover .card-body,
 .theme-dark .card-event:hover .card-body,
 .theme-dark .card-item:hover .card-icon img {
-  background: var(--color-gray-300) !important;
+  background: var(--color-primary-2) !important;
   transition: all 0.2s ease-in;
 }
 
@@ -2826,7 +2826,7 @@ imput:active {
 
 .page-info {
   margin-top: 15px;
-  border-top: 1px solid var(--color-gray-400);
+  border-top: 1px solid var(--color-primary-2);
   padding: 15px 0;
   width: 100%;
   display: block;
@@ -2866,7 +2866,7 @@ imput:active {
 .small-hero .img img {
   width: 85px;
   height: 85px;
-  background: var(--color-gray-300) !important;
+  background: var(--color-primary-2) !important;
   border-radius: 210px;
   padding: 5px;
 }
