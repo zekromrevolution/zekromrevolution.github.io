@@ -55,7 +55,7 @@ body {
 /** Progress Bar **/
 .progress-container {
   margin: 100px auto;
-  width: 500px;
+  width: 100px auto;
   text-align: center;
 }
 
@@ -68,7 +68,7 @@ body {
 
 .progress-bar {
   height: 18px;
-  background-color: --color-gray-400;
+  background-color: --color-secondary;
   border-radius: 4px;
   transition: 0.4s linear;
   transition-property: width, background-color;
