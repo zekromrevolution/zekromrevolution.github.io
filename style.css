@@ -119,13 +119,13 @@ body {
 }
 
 .zk-discord {
-  color: #FFEE98;
-  background-color: #FFAC3D;
+  color: --color-white-6;
+  background-color: --color-secondary;
 }
 
 .zk-light-discord {
-  color: #FFEE98;
-  background-color: #7B7B7B;
+  color: --color-white-6;
+  background-color: --color-primary;
 }
 
 /** Utility Classes **/
