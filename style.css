@@ -305,6 +305,20 @@ a.color-white:hover {
   background-color: var(--color-primary) !important;
   border-color: var(--color-secondary-alt) !important;
 }
+
+.btn-main-dark {
+  color: #fff;
+  background-color: var(--color-primary-2);
+  border-color: var(--color-primary-alt);
+}
+.btn-main-dark:hover,
+.btn-main-dark:focus,
+.btn-main-dark:active {
+  color: #fff;
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-secondary-alt) !important;
+}
+
 /** Popovers **/
 
 .popover {
