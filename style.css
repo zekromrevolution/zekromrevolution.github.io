@@ -154,15 +154,15 @@ body {
 }
 
 .bt-1 {
-  border-top: 1px solid var(--color-primary-2);
+  border-top: 1px solid var(--color-gray-200);
 }
 
 .bb-1 {
-  border-bottom: 1px solid var(--color-primary-2);
+  border-bottom: 1px solid var(--color-gray-200);
 }
 
 .br-1 {
-  border-right: 1px solid var(--color-primary-2);
+  border-right: 1px solid var(--color-gray-200);
 }
 
 .bl-1 {
@@ -170,7 +170,7 @@ body {
 }
 
 .ba-1 {
-  border: 1px solid var(--color-primary-2);
+  border: 1px solid var(--color-gary-200);
 }
 
 .br-4 {
@@ -489,9 +489,9 @@ h5.h6.mb-1 .badge-verified {
 }
 
 .tabbed-area .nav-link.active {
-    color: var(--color-secondary-alt);
+    color: var(--color-secondary);
     border: 0px;
-    border-bottom: 2px solid var(--color-secondary);
+    border-bottom: 2px solid var(--color-primary-alt);
     background: transparent!important;
 }
 
@@ -522,7 +522,7 @@ h5.h6.mb-1 .badge-verified {
   padding: 15px;
   background: --color-primary-alt;
   border-radius: 6px;
-  color: var(--color-primary);
+  color: var(--color-gray-200);
   margin-bottom: 15px;
 }
 
@@ -775,7 +775,7 @@ p {
 .list-group-item {
   background-color: var(--color-primary-2);
   border: 1px solid rgba(255, 255, 255, 0.02);
-  color: var(--color-primary-alt) !important;
+  color: var(--color-gray-200) !important;
 }
 .list-group-item-action:focus,
 .list-group-item-action:hover {
