@@ -1438,7 +1438,7 @@ img.platform-image {
 .hero-bar .form-control {
   box-shadow: none !important;
   color: #464a4c;
-  background-color: var(--color-gray-400);
+  background-color: var(--color-primary-alt);
   border: 0px;
   height: 50px !important;
 }
@@ -2123,6 +2123,7 @@ div#lite-search-input {
   }
   .navbar-nav.float-right {
     float: right !important;
+    background-color: --color-primary-alt;
     width: 100%;
   }
   #lite-server-rows {
