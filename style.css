@@ -62,21 +62,21 @@ body {
 
 .progress {
   padding: 6px;
-  background: --color-primary;
+  background: var(--color-primary);
   border-radius: 6px;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
 }
 
 .progress-bar {
   height: 18px;
-  background-color: --color-secondary;
+  background-color: var(--color-secondary);
   border-radius: 4px;
   transition: 0.4s linear;
-  transition-property: width, --color-secondary;
+  transition-property: width, var(--color-secondary);
 }
 
 .progress-moved .progress-bar {
-  background-color: --color-secondary;
+  background-color: var(--color-secondary);
   background-image: linear-gradient(45deg, --color-secondary-alt 25%, transparent 25%, transparent 50%, --color-secondary-alt 50%, --color-secondary-alt 75%, transparent 75%, transparent);
   /*animation: progressAnimation 6s;*/
 }
@@ -119,13 +119,13 @@ body {
 }
 
 .zk-discord {
-  color: --color-white-6;
-  background-color: --color-secondary;
+  color: var(--color-white-6);
+  background-color: var(--color-secondary);
 }
 
 .zk-light-discord {
-  color: --color-white-6;
-  background-color: --color-primary;
+  color: var(--color-white-6);
+  background-color: var(--color-primary);
 }
 
 /** Utility Classes **/
