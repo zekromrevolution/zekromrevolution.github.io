@@ -154,23 +154,23 @@ body {
 }
 
 .bt-1 {
-  border-top: 1px solid var(--color-gray-400);
+  border-top: 1px solid var(--color-primary-2);
 }
 
 .bb-1 {
-  border-bottom: 1px solid var(--color-gray-400);
+  border-bottom: 1px solid var(--color-primary-2);
 }
 
 .br-1 {
-  border-right: 1px solid var(--color-gray-400);
+  border-right: 1px solid var(--color-primary-2);
 }
 
 .bl-1 {
-  border-left: 1px solid var(--color-gray-400);
+  border-left: 1px solid var(--color-primary-2);
 }
 
 .ba-1 {
-  border: 1px solid var(--color-gray-400);
+  border: 1px solid var(--color-primary-2);
 }
 
 .br-4 {
@@ -471,13 +471,13 @@ h5.h6.mb-1 .badge-verified {
 /** Tabbed Area **/
 
 .tabbed-area {
-  border-bottom: 1px solid var(--color-gray-400);
+  border-bottom: 1px solid var(--color-primary-2);
 }
 
 .tabbed-area .nav-link {
     display: block;
     padding: 0.4rem 0 0.58rem 0;
-    color: var(--color-white-60);
+    color: var(--color-primary-alt);
     margin-right: 25px;
     font-family: Arial;
     font-size: 14px;
@@ -485,13 +485,13 @@ h5.h6.mb-1 .badge-verified {
 }
 
 .tabbed-area .nav-link:hover {
-    color: var(--color-white-72);
+    color: var(--color-secondary);
 }
 
 .tabbed-area .nav-link.active {
-    color: var(--color-white-84);
+    color: var(--color-secondary-alt);
     border: 0px;
-    border-bottom: 2px solid var(--color-white-84);
+    border-bottom: 2px solid var(--color-secondary);
     background: transparent!important;
 }
 
@@ -508,8 +508,8 @@ h5.h6.mb-1 .badge-verified {
     padding: 0.55rem 1rem;
 }
 .tabbed-pills li.nav-item:hover {
-  background-color: var(--color-gray-400) !important;
-  border-bottom: 0px solid var(--color-discord);
+  background-color: var(--color-primary-2) !important;
+  border-bottom: 0px solid var(--color-primary-alt);
   border-radius: 4px;
 }
 /** Stats Group **/
@@ -520,9 +520,9 @@ h5.h6.mb-1 .badge-verified {
 
 .stats-group .stat {
   padding: 15px;
-  background: #191c24;
+  background: --color-primary-alt;
   border-radius: 6px;
-  color: var(--color-white-60);
+  color: var(--color-primary);
   margin-bottom: 15px;
 }
 
@@ -531,7 +531,7 @@ h5.h6.mb-1 .badge-verified {
   margin-right: 5px;
   display: inline-block;
   position: absolute;
-  background: #3ba561;
+  background: --color-primary-alt;
   border-radius: 210px;
   text-align: center;
 }
@@ -628,7 +628,7 @@ li.list-group-item a {
 }
 
 .featured-select div:hover {
-  background: var(--color-gray-600);
+  background: var(--color-primary-alt);
 }
 
 .featured-select div.active {
@@ -642,7 +642,7 @@ a .type-select-badge {
 .type-select div {
   display: inline-block;
   min-width: 40px;
-  background: var(--color-gray-500);
+  background: var(--color-primary-alt);
   text-align: center;
   padding: 5px 10px;
   border-radius: 6px;
@@ -652,11 +652,11 @@ a .type-select-badge {
 }
 
 .type-select div:hover {
-  background: var(--color-gray-600);
+  background: var(--color-primary-2);
 }
 
 .type-select div.active {
-  background: var(--color-discord);
+  background: var(--color-secondary);
 }
 
 .blog-text img {
@@ -726,13 +726,13 @@ input {
   padding: 8px 15px;
 }
 .btn-secondary {
-  background-color: var(--color-gray-400);
+  background-color: var(--color-primary-alt);
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus,
 .btn-secondary:active {
-  background-color: var(--color-gray-300) !important;
+  background-color: var(--color-secondary) !important;
 }
 
 .btn-icon-round {
@@ -743,11 +743,11 @@ input {
 }
 
 input {
-  background-color: var(--color-gray-400) !important;
+  background-color: var(--color-secondary) !important;
 }
 
 input:hover {
-  background-color: var(--color-gray-300) !important;
+  background-color: var(--color-secondary-alt) !important;
   transition: all 0.2s ease-in;
 }
 
@@ -775,7 +775,7 @@ p {
 .list-group-item {
   background-color: var(--color-primary-2);
   border: 1px solid rgba(255, 255, 255, 0.02);
-  color: var(--color-white-72) !important;
+  color: var(--color-primary-alt) !important;
 }
 .list-group-item-action:focus,
 .list-group-item-action:hover {
@@ -883,7 +883,7 @@ a.text-muted:hover {
 }
 .heading-bar {
   padding: 15px 0;
-  background: var(--color-gray-700);
+  background: var(--color-secondary-alt);
 }
 .promotion-bar {
   padding: 10px 0;
@@ -938,7 +938,7 @@ a.text-muted:hover {
 
 .s-server-card {
   padding: 20px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid --color-primary-alt;
 }
 .s-server-card:first-child {
   padding-top: 0;
@@ -968,10 +968,10 @@ a.text-muted:hover {
   background-color: #fff;
 }
 .card-body .input-group-prepend .input-group-text {
-  background-color: var(--color-gray-600) !important;
+  background-color: var(--color-primary-2) !important;
 }
 .card-body .form-control {
-  background: var(--color-gray-200) !important;
+  background: var(--color-primary-alt) !important;
   color: #d0d8dd !important;
 }
 .s-server-card .badge-secondary {
@@ -1016,7 +1016,7 @@ a.text-muted:hover {
   border-bottom: 0px solid var(--color-discord);
 }
 .nav-pills .nav-link {
-  color: var(--color-white-84);
+  color: var(--color-primary-alt);
   padding: 0.4rem 1rem;
 }
 .profile-dropdown img {
@@ -1173,7 +1173,7 @@ img.platform-image {
 .dropdown-item:hover {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  background-color: var(--color-gray-400);
+  background-color: var(--color-primary-2);
 }
 .dropdown-item i {
   padding-right: 5px;
@@ -1181,7 +1181,7 @@ img.platform-image {
 }
 .dropdown-menu {
   color: #e4e4e4;
-  background-color: var(--color-gray-300);
+  background-color: var(--color-primary-alt);
   border: 0px !important;
   padding: 0.5rem;
 }
