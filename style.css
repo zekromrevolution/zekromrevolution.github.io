@@ -47,7 +47,7 @@ html {
 
 body {
   font-family: Arial;
-  background-color: var(--color-primary) !important;
+  background-color: linear-gradient(var(--color-secondary), var(--color-primary-alt), var(--color-primary-2), var(--color-primary));
   background-attachment: fixed;
   overflow: auto;
 }
