@@ -533,7 +533,7 @@ h5.h6.mb-1 .badge-verified {
     color: var(--color-white-3);
     margin-right: 25px;
     font-family: Arial;
-    font-size: 14px;
+    font-size: 15px;
     border-bottom: 2px solid;
 }
 
@@ -544,8 +544,8 @@ h5.h6.mb-1 .badge-verified {
 .tabbed-area .nav-link.active {
     color: var(--color-secondary);
     border: 0px;
-    border-bottom: 2px solid var(--color-primary-alt);
-    background: transparent!important;
+    border-bottom: 2px solid var(--color-secondary-alt);
+    /* background: transparent!important; */
 }
 
 /** Tabbed Pills **/
@@ -573,7 +573,7 @@ h5.h6.mb-1 .badge-verified {
 
 .stats-group .stat {
   padding: 15px;
-  background: --color-primary-alt;
+  background: var(--color-primary-alt);
   border-radius: 6px;
   color: var(--color-white-84);
   margin-bottom: 15px;
@@ -584,7 +584,7 @@ h5.h6.mb-1 .badge-verified {
   margin-right: 5px;
   display: inline-block;
   position: absolute;
-  background: --color-primary-alt;
+  background: var(--color-primary-alt);
   border-radius: 210px;
   text-align: center;
 }
@@ -1069,7 +1069,7 @@ a.text-muted:hover {
   border-bottom: 0px solid var(--color-discord);
 }
 .nav-pills .nav-link {
-  color: var(--color-primary-alt);
+  color: var(--color-white-6);
   padding: 0.4rem 1rem;
 }
 .profile-dropdown img {
