@@ -1,4 +1,4 @@
-@font-face {
+q@font-face {
   font-family: "ServerName";
   src: url("fonts/Designer.otf") format("opentype");
   font-weight: normal;
@@ -34,11 +34,11 @@
   --background-secondary-alt: #15171d;
   --background-tertiary: #202225;
   --background-accent: #4f545c;
-  --color-primary: #03045e;
-  --color-primary-2: #0077b6;
-  --color-primary-alt: #00b4d8;
-  --color-secondary: #90e0ef;
-  --color-secondary-alt: #caf0f8;
+  --color-primary: #0B1425;
+  --color-primary-2: #09204C;
+  --color-primary-alt: #00256C;
+  --color-secondary: #0049D5;
+  --color-secondary-alt: #0057FF;
 }
 
 html {
