@@ -99,7 +99,7 @@
                
               <li class="list-group-item"><img src="https://cdn.discordapp.com/attachments/898418373526962186/1069596450117406770/1675082013968.png" style="width:20px;height:17px;">&nbsp Members:<br><a  class="badge badge-secondary-202 btn-sm"><b><span id="num"></span> Members</b></a></li>
   
-               <li class="list-group-item"><img src="https://cdn.discordapp.com/emojis/1075733285939990589.png" style="width:20px;height:17px;">&nbsp Goal Progress:<br><a class="badge badge-secondary-202 btn-sm"><b><span id="server_goal"></b></span></a><br><!--<div class="progress-container progress progress-moved progress-bar" id="goal_pr"></div>--><div class="zk-light-discord w3-round-xlarge"><div class="w3-container w3-round-xlarge zk-discord" id="goal_pr"></div>
+               <li class="list-group-item"><img src="https://cdn.discordapp.com/emojis/1075733285939990589.png" style="width:20px;height:17px;">&nbsp Goal Progress:<br><a class="badge badge-secondary-202 btn-sm"><b>2,000 Members</b></a><br><!--<div class="progress-container progress progress-moved progress-bar" id="goal_pr"></div>--><div class="zk-light-discord w3-round-xlarge"><div class="w3-container w3-round-xlarge zk-discord" id="goal_pr"></div>
                </div>
                
             </ul>
@@ -550,7 +550,6 @@
   let num = document.getElementById("num");
   let server_icon_url = document.getElementById("siu");
   let goal_pr = document.getElementById("goal_pr");
-  let goal_prg = document.getElementById("server_goal");
   const getprinfo = async () => {
   let gprreq = await fetch(
     "https://discord.com/api/v9/invites/VkvRkV2VPF?with_counts=true&with_expiration=true"
@@ -558,9 +557,8 @@
   let data = await gprreq.json();
   let gpr = data["approximate_member_count"];
     
-  goal_prg.innerText = `( ${gpr-44}/ 2000 )`;
-  goal_pr.style = `width:${Math.trunc(((gpr-44)/2000)*100)}%`;
-  goal_pr.innerText = `GOAL PROGRESS ${Math.floor(((gpr-40)/2000)*100)}%`;
+  goal_pr.style = `width:${Math.trunc(((gpr-46)/2000)*100)}%`;
+  goal_pr.innerText = `GOAL PROGRESS ${Math.floor(((gpr-46)/2000)*100)}%`;
   goal_pr.style.fontWeight = "bold";
   goal_pr.style.fontSize = "xx-small";
   num.innerText = gpr;
