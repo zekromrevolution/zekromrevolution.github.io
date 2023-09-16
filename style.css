@@ -18,6 +18,7 @@
   --color-gray-400: #22242c;
   --color-gray-300: #292b33;
   --color-gray-200: #383b46;
+  --color-gray-100: #383b463d;
   --color-white-84: #ffffffd6;
   --color-white-72: #ffffffb8;
   --color-white-60: #fff9;
@@ -533,7 +534,7 @@ h5.h6.mb-1 .badge-verified {
     color: var(--color-white-84);
     margin-right: 25px;
     font-family: Arial;
-    font-size: 13.5px;
+    font-size: 13px;
     border-bottom: 2px solid transparent;
 }
 
@@ -2922,7 +2923,7 @@ imput:active {
 .small-hero .img img {
   width: 85px;
   height: 85px;
-  background: var(--color-primary) transparent !important;
+  background: var(--color-gray-100) !important;
   border-radius: 210px;
   padding: 5px;
 }
