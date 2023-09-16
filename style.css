@@ -121,12 +121,12 @@ body {
 }
 
 .zk-discord {
-  color: var(--color-white-6);
+  color: var(--color-white-84);
   background-color: var(--color-secondary);
 }
 
 .zk-light-discord {
-  color: var(--color-white-6);
+  color: var(--color-white-84);
   background-color: var(--color-primary);
 }
 
