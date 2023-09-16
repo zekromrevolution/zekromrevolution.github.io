@@ -530,15 +530,15 @@ h5.h6.mb-1 .badge-verified {
 .tabbed-area .nav-link {
     display: block;
     padding: 0.4rem 0 0.58rem 0;
-    color: var(--color-white-12);
+    color: var(--color-white-3);
     margin-right: 25px;
     font-family: Arial;
     font-size: 14px;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid;
 }
 
 .tabbed-area .nav-link:hover {
-    color: var(--color-white-84);
+    color: var(--color-white-3);
 }
 
 .tabbed-area .nav-link.active {
@@ -575,7 +575,7 @@ h5.h6.mb-1 .badge-verified {
   padding: 15px;
   background: --color-primary-alt;
   border-radius: 6px;
-  color: var(--color-gray-200);
+  color: var(--color-white-84);
   margin-bottom: 15px;
 }
 
