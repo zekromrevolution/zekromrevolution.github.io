@@ -461,7 +461,7 @@
                       </div>
                         <h5 class="h6 mb-1"><b>Vulpix Wonderland </b><span class="badge badge-danger"> Featured!</span></h5>
                         <p class="card-text">Dive into a world where friendship and support are at the forefront. Connect with like-minded individuals who share a passion for Pokemon and a love for building meaningful connections.</p>
-                        <p class="card-stats mt-3"><a  class="badge btn-sm btn-primary" style = "color:#535353; background-color:#ffffff"><b><span id="num4"></span> Members</b></a></p>
+                        <p class="card-stats mt-3"><a  class="badge btn-sm btn-primary" style = "color:#535353; background-color:#ffffff"><b><span id="num3"></span> Members</b></a></p>
                       </div>
                     </a>
                </div>
@@ -476,7 +476,7 @@
                       </div>
                         <h5 class="h6 mb-1"><b>Equality </b></h5>
                         <p class="card-text">A Pokémon based server where you can play Pokemeow, listen to music and hang out with new people!</p>
-                        <p class="card-stats mt-3"><a  class="badge btn-sm btn-primary" style = "color:#535353; background-color:#ffffff"><b><span id="num5"></span> Members</b></a></p>
+                        <p class="card-stats mt-3"><a  class="badge btn-sm btn-primary" style = "color:#535353; background-color:#ffffff"><b><span id="num4"></span> Members</b></a></p>
                       </div>
                     </a>
                 </div>
@@ -491,10 +491,25 @@
                       </div>
                         <h5 class="h6 mb-1"><b>PokéLegend Y </b></h5>
                         <p class="card-text">POKELEGEND-Y is a beautiful server made for Pokémon lovers!</p>
-                        <p class="card-stats mt-3"><a  class="badge btn-sm btn-primary" style = "color:#535353; background-color:#ffffff"><b><span id="num6"></span> Members</b></a></p>
+                        <p class="card-stats mt-3"><a  class="badge btn-sm btn-primary" style = "color:#535353; background-color:#ffffff"><b><span id="num5"></span> Members</b></a></p>
                       </div>
                     </a>
                 </div>
+         <div class="col-md-3 mb-4">
+                    <a href="https://discord.gg/8MjA7XQqTR" class="card card-item">
+                      <div class="card-feature">
+                      <img src="https://cdn.discordapp.com/attachments/1173815673256947834/1173835196014006282/IMG_20231114_093029.JPG" class="card-img-top" alt="PokéLegend Y" />
+                    </div>
+                      <div class="card-body">
+                        <div class="card-icon">
+                        <img src="https://cdn.discordapp.com/attachments/1173815673256947834/1173837651367956530/Untitled231_20231114094132.png" />
+                      </div>
+                        <h5 class="h6 mb-1"><b>🔎 Detective Pikachu</b></h5>
+                        <!--<p class="card-text"></p>-->
+                        <p class="card-stats mt-3"><a  class="badge btn-sm btn-primary" style = "color:#535353; background-color:#ffffff"><b><span id="num6"></span> Members</b></a></p>
+                      </div>
+                    </a>
+         </div>
          <div class="col-md-3 mb-4">
                     <a href="https://discord.gg/CJeGTb7aWF" class="card card-item">
                       <div class="card-feature">
@@ -506,7 +521,7 @@
                       </div>
                         <h5 class="h6 mb-1"><b>Shadowlands </b><!--<span class="badge badge-danger"> Featured!</span>--></h5>
                         <!--<p class="card-text">A Pokémon based server where you can play Pokemeow, listen to music and hang out with new people!</p>-->
-                        <p class="card-stats mt-3"><a  class="badge btn-sm btn-primary" style = "color:#535353; background-color:#ffffff"><b><span id="num3"></span> Members</b></a></p>
+                        <p class="card-stats mt-3"><a  class="badge btn-sm btn-primary" style = "color:#535353; background-color:#ffffff"><b><span id="num7"></span> Members</b></a></p>
                       </div>
                     </a>
                 </div>
@@ -577,32 +592,38 @@ setInterval(getprinfo, 10000);
   let num3 = document.getElementById("num4");
   let num4 = document.getElementById("num5");
   let num5 = document.getElementById("num6");
+  let num6 = document.getElementById("num7");
   const showInfo = async () => {
   let req = await fetch(
-    "https://discord.com/api/v9/invites/c3eBGJqztR?with_counts=true&with_expiration=true"
-  );
-  let req2 = await fetch(
     "https://discord.com/api/v9/invites/CJeGTb7aWF?with_counts=true&with_expiration=true"
   );
-  let req3 = await fetch(
+  let req2 = await fetch(
     "https://discord.com/api/v9/invites/xeVvyuCe9X?with_counts=true&with_expiration=true"
   );
-  let req4 = await fetch(
+  let req3 = await fetch(
     "https://discord.com/api/v9/invites/K3UNJQFjuP?with_counts=true&with_expiration=true"
   );
-  let req5 = await fetch(
+  let req4 = await fetch(
     "https://discord.com/api/v9/invites/yRQPbKpCHg?with_counts=true&with_expiration=true"
+  );
+  let req5 = await fetch(
+    "https://discord.com/api/v9/invites/8MjA7XQqTR?with_counts=true&with_expiration=true"
+  );
+  let req6 = await fetch(
+    "https://discord.com/api/v9/invites/c3eBGJqztR?with_counts=true&with_expiration=true"
   );
   let data1 = await req.json();
   let data2 = await req2.json();
   let data3 = await req3.json();
   let data4 = await req4.json();
   let data5 = await req5.json();
+  let data6 = await req6.json();
   num1.innerText = data1["approximate_member_count"];
   num2.innerText = data2["approximate_member_count"];
   num3.innerText = data3["approximate_member_count"];
   num4.innerText = data4["approximate_member_count"];
   num5.innerText = data5["approximate_member_count"];
+  num6.innerText = data6["approximate_member_count"];
 };
 showInfo();
 setInterval(showInfo, 100000);
