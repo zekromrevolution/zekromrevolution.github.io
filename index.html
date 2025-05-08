@@ -49,8 +49,16 @@
                     <b>
                         <z class="zkr"> 𝙕𝙀𝙆𝙍𝙊𝙈 𝙍𝙀𝙑𝙊𝙇𝙐𝙏𝙄𝙊𝙉</z>
                     </b>
-                </a>
-                <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbar"><ul class="navbar-nav mr-auto"><li class="nav-item"><a class="nav-link" href="#second-server">Our Discord Server</a></li><li class="nav-item"><a class="nav-link" href="#partners">Our Server Partners <span class="badge badge-danger">New!</span></a></li><li class="nav-item"><a class="nav-link" href="#VoteModal" data-toggle="modal" target="#VoteModal">Check Topgg</a></li><li class="nav-item"><a class="nav-link" href="#shareModal" data-toggle="modal" target="#shareModal">Share</a></li></ul></div>-->
+                </a><!--
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item"><a class="nav-link" href="#second-server">Our Shinyhunt Server <span class="badge badge-danger">Featured!</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#partners">Server Partners <span class="badge badge-danger">Featured!</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#VoteModal" data-toggle="modal" target="#VoteModal">Vote Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#shareModal" data-toggle="modal" target="#shareModal">Share</a></li>
+                        </ul>
+                    </div>-->
             </div>
         </nav>
         <div id="scrollPath"></div>
@@ -95,7 +103,7 @@
                             <img src="assets/members.png" style="width:20px;height:17px;">&nbsp Members: <br>
                             <a class="badge badge-secondary-202 btn-sm">
                                 <b>
-                                    <span id="num"></span> Members </b>
+                                    <span id="members"></span> Members </b>
                             </a>
                         </li>
                         <li class="list-group-item">
@@ -478,7 +486,7 @@
                                 <p class="card-stats mt-3">
                                     <a class="badge btn-sm btn-primary" style="color:#535353; background-color:#ffffff">
                                         <b>
-                                            <span id="num2"></span> Members </b>
+                                            <span id="num1"></span> Members </b>
                                     </a>
                                 </p>
                             </div>
@@ -518,7 +526,7 @@
                                 <p class="card-stats mt-3">
                                     <a class="badge btn-sm btn-primary" style="color:#535353; background-color:#ffffff">
                                         <b>
-                                            <span id="num3"></span> Members </b>
+                                            <span id="num2"></span> Members </b>
                                     </a>
                                 </p>
                             </div>
@@ -540,7 +548,7 @@
                                 <p class="card-stats mt-3">
                                     <a class="badge btn-sm btn-primary" style="color:#535353; background-color:#ffffff">
                                         <b>
-                                            <span id="num4"></span> Members </b>
+                                            <span id="num3"></span> Members </b>
                                     </a>
                                 </p>
                             </div>
@@ -562,7 +570,7 @@
                                 <p class="card-stats mt-3">
                                     <a class="badge btn-sm btn-primary" style="color:#535353; background-color:#ffffff">
                                         <b>
-                                            <span id="num5"></span> Members </b>
+                                            <span id="num4"></span> Members </b>
                                     </a>
                                 </p>
                             </div>
@@ -584,7 +592,7 @@
                                 <p class="card-stats mt-3">
                                     <a class="badge btn-sm btn-primary" style="color:#535353; background-color:#ffffff">
                                         <b>
-                                            <span id="num6"></span> Members </b>
+                                            <span id="num5"></span> Members </b>
                                     </a>
                                 </p>
                             </div>
@@ -607,7 +615,7 @@
                                 <p class="card-stats mt-3">
                                     <a class="badge btn-sm btn-primary" style="color:#535353; background-color:#ffffff">
                                         <b>
-                                            <span id="num7"></span> Members </b>
+                                            <span id="num6"></span> Members </b>
                                     </a>
                                 </p>
                             </div>
@@ -744,60 +752,46 @@
             </div>
         </div>
         <script>
-            let num = document.getElementById("num");
-            let server_icon_url = document.getElementById("siu");
-            let goal_pr = document.getElementById("goal_pr");
-            const getprinfo = async () => {
-                let gprreq = await fetch("https://discord.com/api/v9/invites/VkvRkV2VPF?with_counts=true&with_expiration=true");
-                let data = await gprreq.json();
-                let gpr = data["approximate_member_count"];
-                goal_pr.style = `width:${Math.trunc(((gpr-46)/2000)*100)}%`;
-                goal_pr.innerText = `PROGRESS ${Math.floor(((gpr-46)/2000)*100)}%`;
-                goal_pr.style.fontWeight = "bold";
-                goal_pr.style.fontSize = "xx-small";
-                num.innerText = gpr;
-                server_icon_url.src = `https://cdn.discordapp.com/icons/847037056186056714/${data['guild']['icon']}.webp?size=2048`;
-            };
-            getprinfo();
-            setInterval(getprinfo, 10000);
-        </script>
-        <script>
-            let num1 = document.getElementById("num2");
-            let num2 = document.getElementById("num3");
-            let num3 = document.getElementById("num4");
-            let num4 = document.getElementById("num5");
-            let num5 = document.getElementById("num6");
-            let num6 = document.getElementById("num7");
-            const showInfo = async () => {
-                let req = await fetch("https://discord.com/api/v9/invites/CJeGTb7aWF?with_counts=true&with_expiration=true");
-                let req2 = await fetch("https://discord.com/api/v9/invites/xeVvyuCe9X?with_counts=true&with_expiration=true");
-                let req3 = await fetch("https://discord.com/api/v9/invites/K3UNJQFjuP?with_counts=true&with_expiration=true");
-                let req4 = await fetch("https://discord.com/api/v9/invites/yRQPbKpCHg?with_counts=true&with_expiration=true");
-                let req5 = await fetch("https://discord.com/api/v9/invites/8MjA7XQqTR?with_counts=true&with_expiration=true");
-                let req6 = await fetch("https://discord.com/api/v9/invites/c3eBGJqztR?with_counts=true&with_expiration=true");
-                let data1 = await req.json();
-                let data2 = await req2.json();
-                let data3 = await req3.json();
-                let data4 = await req4.json();
-                let data5 = await req5.json();
-                let data6 = await req6.json();
-                num1.innerText = data1["approximate_member_count"];
-                num2.innerText = data2["approximate_member_count"];
-                num3.innerText = data3["approximate_member_count"];
-                num4.innerText = data4["approximate_member_count"];
-                num5.innerText = data5["approximate_member_count"];
-                num6.innerText = data6["approximate_member_count"];
-            };
-            showInfo();
-            setInterval(showInfo, 100000);
-        </script>
-        <script type="text/javascript">
-            let progress = document.getElementById("progressbar");
-            let totalHeight = document.body.scrollHeight - window.innerHeight;
-            window.onscroll = function() {
-                let progressHeight = (window.pageYOffset / totalHeight) * 100;
-                progress.style.height = progressHeight + "%";
-            }
+          const $ = id => document.getElementById(id),
+                members = $("members"),
+                server_icon_url = $("siu"),
+                goal_pr = $("goal_pr"),
+                nums = ["num1", "num2", "num3", "num4", "num5", "num6"].map($),
+                invites = [
+                  "yrY4qDr3Sr", "xeVvyuCe9X", "K3UNJQFjuP",
+                  "yRQPbKpCHg", "8MjA7XQqTR", "CJeGTb7aWF"
+                ];
+        
+          const updateGoal = async () => {
+            const res = await fetch("https://discord.com/api/v9/invites/VkvRkV2VPF?with_counts=true&with_expiration=true"),
+                  data = await res.json(),
+                  count = data.approximate_member_count,
+                  percent = Math.floor(((count - 46) / 2000) * 100);
+            goal_pr.style = `width:${percent}%;font-weight:bold;font-size:xx-small`;
+            goal_pr.innerText = `PROGRESS ${percent}%`;
+            members.innerText = count;
+            server_icon_url.src = `https://cdn.discordapp.com/icons/847037056186056714/${data.guild.icon}.webp?size=2048`;
+          };
+        
+          const updateCounts = async () => {
+            const results = await Promise.all(invites.map(code =>
+              fetch(`https://discord.com/api/v9/invites/${code}?with_counts=true&with_expiration=true`).then(r => r.json())
+            ));
+            results.forEach((data, i) => nums[i].innerText = data.approximate_member_count);
+          };
+        
+          const updateScroll = () => {
+            const total = document.body.scrollHeight - window.innerHeight,
+                  progress = $("progressbar"),
+                  height = (window.pageYOffset / total) * 100;
+            progress.style.height = height + "%";
+          };
+        
+          updateGoal();
+          updateCounts();
+          setInterval(updateGoal, 10000);
+          setInterval(updateCounts, 100000);
+          window.onscroll = updateScroll;
         </script>
         <script src="https://disforge.com/assets/js/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -831,7 +825,6 @@
                             </div>
                             <input type="text" class="form-control" value="https://discord.gg/VkvRkV2VPF" />
                             <br>
-                            <!--<a>Website Link</a><br><input type="text" class="form-control" value="https://zekromrevolution.github.io"/>-->
                         </div>
                     </div>
                 </div>
